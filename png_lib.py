@@ -190,3 +190,26 @@ class _png_chunk:
         bytes_str = "00"*num_leading_zero + bytes_str
         return bytes_str
 
+        
+
+class _filter:
+    
+    @staticmethod
+    def none_filter(bytes):
+        return bytes[:]
+
+    @staticmethod
+    def sub_filter(bytes):
+        filt_bytes = b""
+        filt_bytes += bytes[0]
+        for i in range(1, len(bytes)):
+            new_byte = _pack_int(1, _to_int(bytes[i]) - _to_int(bytes[i-1]))
+            filt_bytes += new_byte
+        return filt_bytes
+
+    @staticmethod
+    def up_filter(bytes):
+        filt_bytes = b""
+        filt_bytes '''
+        
+        
