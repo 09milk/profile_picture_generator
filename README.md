@@ -15,4 +15,4 @@ python profile_picture_generator.py [number of png you want to generate]
 
 ## License
 
-This project is licensed under the GNU/GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU/GPLv3 License - see the [LICENSE](LICENSE) file for details
